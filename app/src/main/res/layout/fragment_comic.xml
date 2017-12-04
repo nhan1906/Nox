@@ -1,0 +1,73 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="zenlife.nox.nox.home.ComicFragment"
+    android:id="@+id/rootLayoutComic">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_scrollFlags="scroll|enterAlways">
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolBarComic"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/toolbarBackgroundComic"
+                app:layout_collapseMode="parallax"
+                android:contentInsetLeft="0dp"
+                android:contentInsetStart="0dp"
+                app:contentInsetLeft="0dp"
+                app:contentInsetStart="0dp"
+                android:contentInsetRight="0dp"
+                android:contentInsetEnd="0dp"
+                app:contentInsetRight="0dp"
+                app:contentInsetEnd="0dp">
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <zenlife.nox.nox.fonts.TitleAppFontTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nox"
+                        android:textColor="@color/titleappColor"
+                        android:textSize="26sp"
+                        android:layout_gravity="center|start"
+                        android:layout_marginLeft="@dimen/margin_left_group"/>
+                    <ImageView
+                        android:id="@+id/imgSearchComic"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/icon_search"
+                        android:layout_gravity="end|center"
+                        android:layout_marginRight="@dimen/margin_right_group"/>
+
+                    <ImageView
+                        android:id="@+id/imgThemeComic"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/icon_moon"
+                        android:layout_gravity="center|right"
+                        android:layout_marginRight="52dp"/>
+                </FrameLayout>
+            </android.support.v7.widget.Toolbar>
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorMainBackground"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <include
+            layout="@layout/content_comic"/>
+    </FrameLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

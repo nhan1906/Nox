@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="240dp"
+    android:layout_marginBottom="@dimen/margin_group"
+    android:id="@+id/frameMostComic">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/imgBackgroundMost"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/xmen"
+            android:scaleType="centerCrop" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#222534"
+            android:alpha="0.5"/>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginTop="@dimen/margin_36dp"
+            android:layout_marginBottom="@dimen/margin_36dp">
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="140dp"
+                android:src="@drawable/xmen"
+                android:scaleType="fitXY"
+                android:layout_gravity="center|right"
+                android:layout_marginRight="@dimen/marign_16dp"/>
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+
+            android:layout_weight="1.5">
+            <zenlife.nox.nox.fonts.SeeAllFontTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="24sp"
+                android:gravity="center|left"
+                android:layout_marginTop="@dimen/margin_8dp"
+                android:textColor="@android:color/white"
+                android:text="@string/title_comic"/>
+
+            <!--Display-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </LinearLayout>
+
+            <zenlife.nox.nox.fonts.NoyrContentFontTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginRight="@dimen/marign_16dp"
+                android:layout_marginTop="@dimen/marign_16dp"
+                android:textColor="@android:color/white"
+                android:text="@string/content_comic"/>
+            <zenlife.nox.nox.fonts.NoyrContentFontTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/author_comic"
+                android:textSize="18sp"
+                android:layout_marginRight="@dimen/marign_16dp"
+                android:textColor="@android:color/white"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

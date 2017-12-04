@@ -1,0 +1,232 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="zenlife.nox.nox.MyPageFragment">
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/my_appbar_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:minHeight="100dp">
+
+
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsing_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/imgBackgroundProfile"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/avatar"
+                    android:scaleType="fitXY" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#ddd9ec"
+                    android:alpha="0.5"/>
+            </FrameLayout>
+            <LinearLayout
+                android:id="@+id/linearProfile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="70dp"
+                android:orientation="vertical">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/avatar"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="?attr/actionBarSize"/>
+                <zenlife.nox.nox.fonts.SeeAllFontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Duong Ngoc Nhan"
+                    android:textSize="18sp"
+                    android:layout_marginTop="@dimen/margin_8dp"
+                    android:textColor="@android:color/black"/>
+            </LinearLayout>
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/technique_five_toolbar"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_width="match_parent"
+                app:layout_collapseMode="pin"
+                android:contentInsetLeft="0dp"
+                android:contentInsetStart="0dp"
+                app:contentInsetLeft="0dp"
+                app:contentInsetStart="0dp"
+                android:contentInsetRight="0dp"
+                android:contentInsetEnd="0dp"
+                app:contentInsetRight="0dp"
+                app:contentInsetEnd="0dp">
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <zenlife.nox.nox.fonts.SeeAllFontTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="22sp"
+                        android:layout_gravity="center"
+                        android:text="My Page"
+                        android:textColor="@android:color/black"/>
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/icon_setting"
+                        android:layout_gravity="center|right"
+                        android:layout_marginRight="@dimen/margin_right_group"/>
+                </FrameLayout>
+            </android.support.v7.widget.Toolbar>
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/days_list_5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        app:behavior_overlapTop="64dp" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/marign_8dp"
+                android:layout_marginBottom="@dimen/marign_8dp"
+                android:layout_marginLeft="@dimen/marign_16dp"
+                android:layout_marginRight="@dimen/marign_16dp"
+                android:background="@android:color/white"
+                android:padding="@dimen/margin_8dp">
+                <zenlife.nox.nox.fonts.LabelMainFontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/favorite"
+                    android:textSize="@dimen/label_fontsize"
+                    android:layout_marginBottom="@dimen/margin_8dp"/>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/loveRCMyPage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:nestedScrollingEnabled="false"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/marign_8dp"
+                android:layout_marginBottom="@dimen/marign_8dp"
+                android:layout_marginLeft="@dimen/marign_16dp"
+                android:layout_marginRight="@dimen/marign_16dp"
+                android:background="@android:color/white"
+                android:padding="@dimen/margin_8dp">
+                <zenlife.nox.nox.fonts.LabelMainFontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/saved"
+                    android:textSize="@dimen/label_fontsize"
+                    android:layout_marginBottom="@dimen/margin_8dp"/>
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/saveRCMyPage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:nestedScrollingEnabled="false"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/marign_8dp"
+                android:layout_marginBottom="@dimen/marign_8dp"
+                android:layout_marginLeft="@dimen/marign_16dp"
+                android:layout_marginRight="@dimen/marign_16dp"
+                android:background="@android:color/white"
+                android:padding="@dimen/margin_8dp">
+                <zenlife.nox.nox.fonts.LabelMainFontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/notify"
+                    android:textSize="@dimen/label_fontsize"
+                    android:layout_marginBottom="@dimen/margin_8dp"/>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recentRCMyPage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:nestedScrollingEnabled="false"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/marign_8dp"
+                android:layout_marginBottom="@dimen/marign_8dp"
+                android:layout_marginLeft="@dimen/marign_16dp"
+                android:layout_marginRight="@dimen/marign_16dp"
+                android:background="@android:color/white"
+                android:padding="@dimen/margin_8dp">
+                <zenlife.nox.nox.fonts.LabelMainFontTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_recent"
+                    android:textSize="@dimen/label_fontsize"
+                    android:layout_marginBottom="@dimen/margin_8dp"/>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/notifyRCMyPage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:nestedScrollingEnabled="false"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <FrameLayout
+        android:id="@+id/frameSignIn"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:background="@android:color/white">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+            <zenlife.nox.nox.fonts.SeeAllFontTextView
+                android:id="@+id/txtSignInMyPage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorAccent"
+                android:textSize="20sp"
+                android:text="SIGN IN"
+                android:layout_gravity="center"/>
+            <zenlife.nox.nox.fonts.SeeAllFontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="to see your page"/>
+        </LinearLayout>
+    </FrameLayout>
+</android.support.design.widget.CoordinatorLayout>

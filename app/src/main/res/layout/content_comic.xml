@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <include
+            layout="@layout/content_comic_slideimage"/>
+
+        <include
+            layout="@layout/content_comic_topcomic"/>
+
+        <include
+            layout="@layout/content_comic_popularrc"/>
+
+        <include
+            layout="@layout/content_comic_coming_soon"/>
+
+        <include
+            layout="@layout/content_comic_recentrc"/>
+
+        <include
+            layout="@layout/content_comic_landscape_2x"/>
+
+        <include
+            layout="@layout/content_comic_newestrc"/>
+
+        <include
+            layout="@layout/content_comic_most_comic"/>
+
+        <include
+            layout="@layout/content_comic_landscape_x"/>
+
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

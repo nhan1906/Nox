@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60.25dp"
+    android:background="@drawable/episode_background">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <ImageView
+                android:id="@+id/imgEpisode"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/item_comic"
+                android:scaleType="centerCrop"/>
+        </FrameLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+            <zenlife.nox.nox.fonts.SeeAllFontTextView
+                android:id="@+id/txtEpisode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Episode 1"
+                android:textColor="@android:color/holo_orange_light"
+                />
+            <zenlife.nox.nox.fonts.SeeAllFontTextView
+                android:id="@+id/txtEpisodeTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Animal Spirits"
+                android:textSize="18sp"
+                android:textColor="@android:color/black"/>
+            <zenlife.nox.nox.fonts.NoyrContentFontTextView
+                android:id="@+id/txtDayEpisode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="July 30, 2017"/>
+        </LinearLayout>
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"></FrameLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/frameMark"
+        android:layout_width="14dp"
+        android:layout_height="14dp"
+        android:layout_gravity="top|right"
+        android:background="#eee"
+        android:visibility="gone">
+        <FrameLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/tag_mark_unread_episode"></FrameLayout>
+    </FrameLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.0125dp"
+        android:layout_gravity="bottom"
+        android:background="#aaa"></FrameLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.0125dp"
+        android:layout_gravity="top"
+        android:background="#aaa"></FrameLayout>
+</FrameLayout>

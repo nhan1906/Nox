@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/margin_group">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_left_group"
+        android:layout_marginRight="@dimen/margin_right_group"
+        android:layout_marginBottom="@dimen/margin_bottom_group">
+
+        <zenlife.nox.nox.fonts.LabelMainFontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_recent"
+            android:textSize="@dimen/label_fontsize"
+            android:layout_gravity="start|center"/>
+
+        <zenlife.nox.nox.fonts.SeeAllFontTextView
+            android:id="@+id/recentSeeAll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_seeall"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/seeall_fontsize"
+            android:layout_gravity="end|center"/>
+    </FrameLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recentRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:nestedScrollingEnabled="false"/>
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ImageView
+    android:id="@+id/landscapeItem"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="150dp"
+    android:layout_height="90dp"
+    android:outlineProvider="bounds"
+    android:elevation="@dimen/elevation"
+    android:src="@drawable/cloudboy">
+
+</ImageView>
