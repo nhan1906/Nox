@@ -29,6 +29,8 @@ import android.os.Bundle;
 import android.provider.ContactsContract;
 import android.text.TextUtils;
 import android.view.KeyEvent;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.inputmethod.EditorInfo;
@@ -58,11 +60,11 @@ public class SignInActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_in);
-
-        ImageView imgBackgroundSignUpBlur = (ImageView) findViewById(R.id.imgBackgroundSignUpBlur);
-        Bitmap originalBitmap = BitmapFactory.decodeResource(getResources(), R.drawable.xmen);
-        Bitmap blurredBitmap = BlurBuilder.blur(this, originalBitmap );
-        imgBackgroundSignUpBlur.setImageDrawable(new BitmapDrawable(getResources(), blurredBitmap));
+//
+//        ImageView imgBackgroundSignUpBlur = (ImageView) findViewById(R.id.imgBackgroundSignUpBlur);
+//        Bitmap originalBitmap = BitmapFactory.decodeResource(getResources(), R.drawable.xmen);
+//        Bitmap blurredBitmap = BlurBuilder.blur(this, originalBitmap );
+//        imgBackgroundSignUpBlur.setImageDrawable(new BitmapDrawable(getResources(), blurredBitmap));
 
         ViewPager viewPageSignIn = (ViewPager) findViewById(R.id.viewPageSignIn);
         viewPageSignIn.setAdapter(new LogInViewPageAdapter(getSupportFragmentManager()));
@@ -102,5 +104,6 @@ public class SignInActivity extends AppCompatActivity {
             return titlesPage[position];
         }
     }
+
 }
 

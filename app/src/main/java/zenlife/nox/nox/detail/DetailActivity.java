@@ -29,7 +29,7 @@ import zenlife.nox.nox.R;
 import zenlife.nox.nox.readcomic.ReadComicActivity;
 import zenlife.nox.nox.util.BlurBuilder;
 
-public class DetailActivity extends AppCompatActivity implements View.OnLongClickListener{
+public class  DetailActivity extends AppCompatActivity implements View.OnLongClickListener{
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

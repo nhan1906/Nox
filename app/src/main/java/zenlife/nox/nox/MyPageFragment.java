@@ -5,8 +5,10 @@ import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.drawable.BitmapDrawable;
+import android.media.Image;
 import android.net.Uri;
 import android.os.Bundle;
+import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v4.widget.NestedScrollView;
 import android.support.v7.widget.LinearLayoutManager;
@@ -14,8 +16,12 @@ import android.support.v7.widget.LinearSnapHelper;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.SnapHelper;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -39,6 +45,11 @@ public class MyPageFragment extends Fragment {
         return fragment;
     }
 
+    @Override
+    public void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setHasOptionsMenu(true);
+    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -55,6 +66,13 @@ public class MyPageFragment extends Fragment {
         Bitmap blurredBitmap = BlurBuilder.blur(getContext(), originalBitmap );
         imgBackgroundProfile.setImageDrawable(new BitmapDrawable(getResources(), blurredBitmap));
 
+        final Button exit_img = (Button) view.findViewById(R.id.exit_btn);
+        exit_img.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(getActivity(), SignInActivity.class));
+            }
+        });
 
         final NestedScrollView days_list_5 =(NestedScrollView) view.findViewById(R.id.days_list_5);
         days_list_5.setVisibility(View.GONE);
@@ -72,6 +90,7 @@ public class MyPageFragment extends Fragment {
                 days_list_5.setVisibility(View.VISIBLE);
                 frameSignIn.setVisibility(View.GONE);
                 linearProfile.setVisibility(View.VISIBLE);
+                exit_img.setVisibility(View.VISIBLE);
             }
         });
         return view;
@@ -120,4 +139,5 @@ public class MyPageFragment extends Fragment {
         snapHelper.attachToRecyclerView(popularRecyclerView);
 
     }
+
 }

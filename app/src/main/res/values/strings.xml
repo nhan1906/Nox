@@ -69,4 +69,6 @@
     <string name="favorite">Favorite Comics</string>
     <string name="notify">Notify Comics</string>
     <string name="saved">Saved Comics</string>
+    <string name="sign_out">Sign out</string>
+    <string name="setting">Setting</string>
 </resources>
