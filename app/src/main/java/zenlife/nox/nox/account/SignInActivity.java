@@ -56,6 +56,7 @@ public class SignInActivity extends AppCompatActivity {
 
 
 
+    private TabLayout tabLayoutSignIn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -69,7 +70,11 @@ public class SignInActivity extends AppCompatActivity {
         ViewPager viewPageSignIn = (ViewPager) findViewById(R.id.viewPageSignIn);
         viewPageSignIn.setAdapter(new LogInViewPageAdapter(getSupportFragmentManager()));
 
-        TabLayout tabLayoutSignIn = (TabLayout) findViewById(R.id.tabLayoutSignIn);
+        tabLayoutSignIn = (TabLayout) findViewById(R.id.tabLayoutSignIn);
+        tabLayoutSignIn.setBackgroundColor(getResources().getColor(R.color.color_tabbar));
+        tabLayoutSignIn.setTabTextColors(getResources().getColor(R.color.colorBottomNavDefault), getResources().getColor(R.color.white));
+        tabLayoutSignIn.setDrawingCacheBackgroundColor(getResources().getColor(R.color.white));
+        tabLayoutSignIn.setSelectedTabIndicatorColor(getResources().getColor(R.color.white));
         tabLayoutSignIn.setupWithViewPager(viewPageSignIn);
 
     }

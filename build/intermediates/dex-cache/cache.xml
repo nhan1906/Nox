@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\Users\Kunpark_PC\.android\build-cache\47e11e867dcacf37eed8dd57d04a514b6bcda64d\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="47635644d0d5c103c1dd8360549eb9ba3225c7d3">
+        <dex dex="C:\Users\Kunpark_PC\Desktop\Nox2\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_3ba218ddba403424d063a2157f77464a62358e28\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Kunpark_PC\.android\build-cache\377a4a4074ed6b6e9f7a546eb0ad78231b125378\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="1db6784d006818fee2591f13b0bf09ac31a3d49a">
+        <dex dex="C:\Users\Kunpark_PC\Desktop\Nox2\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_430319a1abdbf7746a1e087c8425f27db8d4a8ce\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Kunpark_PC\.android\build-cache\f390b4c2fd082c270ab8398312da570681587474\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="da27a32db6af8954ee8061537c7d476fcb1df46f">
+        <dex dex="C:\Users\Kunpark_PC\Desktop\Nox2\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_8baa662990888f0d6f5e536e1b0f8bc734452159\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Kunpark_PC\.android\build-cache\09030548b38788ef3b374e8b9165af797310b62a\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="052f5f840f21174a3ecf6544130194e2652cbb73">
+        <dex dex="C:\Users\Kunpark_PC\Desktop\Nox2\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_abdd9ad1711fa8a62d3e802ada1a88bd5561c4b5\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Kunpark_PC\.android\build-cache\fc99b397b10ec5d1f40a299b1f4a6c3f8c34cc72\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="e70a3fed299d84cd868614e11021664d72b8e488">
+        <dex dex="C:\Users\Kunpark_PC\Desktop\Nox2\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_d061ed8687596c08b66b66990974fea1a2c1fe4e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Kunpark_PC\.android\build-cache\adb5d4a0f7bdf1c0bf95a037312f3b5f0961dbb0\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="150252b33b00274cc868578ade018fda0d43a3eb">
+        <dex dex="C:\Users\Kunpark_PC\Desktop\Nox2\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_11ff9fce53ed905ea91e8dcd718009f55f6ed958\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Kunpark_PC\AppData\Local\Android\Sdk\extras\m2repository\com\android\support\constraint\constraint-layout-solver\1.0.2\constraint-layout-solver-1.0.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
+        <dex dex="C:\Users\Kunpark_PC\Desktop\Nox2\app\build\intermediates\transforms\dex\debug\folders\1000\10\constraint-layout-solver-1.0.2_238deae2011686deb13862c31931143d462d6377\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Kunpark_PC\.android\build-cache\5196c4aa415bcf050ade7c6ee4d4e20a264e2039\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Users\Kunpark_PC\Desktop\Nox2\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_77bdce7abfc363aa737861af5be36fb853b29feb\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Kunpark_PC\.android\build-cache\46f0a6c2ae7e68579da0f118545c4345ee41ef9c\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="45f697922e6f072daa12f8a2995dc77ab03c11da">
+        <dex dex="C:\Users\Kunpark_PC\Desktop\Nox2\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_4430b5b01e5e4974d69698a432128274ada0001f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Kunpark_PC\.android\build-cache\6675d2c082a4b12826deb62e80682b273a0915c5\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="95519720620b553f63afc789beba9ad582807f7c">
+        <dex dex="C:\Users\Kunpark_PC\Desktop\Nox2\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_529b4183846dafbd1d5aa7221ff379aaf00a2f46\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Kunpark_PC\.android\build-cache\269ea9a8aa6a5c5a81e4554c04abfb17d0dbc439\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="4a26a1154d053ab11aaf4c3967c42a4d66390991">
+        <dex dex="C:\Users\Kunpark_PC\Desktop\Nox2\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_944c2741b5fd6bd9a4e0b679c4042e1238574f15\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Kunpark_PC\Desktop\Nox2\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="C:\Users\Kunpark_PC\Desktop\Nox2\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_560f4f99ee81ad3de172934b741996e62044dbde\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Kunpark_PC\.android\build-cache\ec0ae43f961fc4bcf01c4a4068ab57e9ed4cdf55\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="efb8cb62d47d157c29d1521daac7eefd4cb881ee">
+        <dex dex="C:\Users\Kunpark_PC\Desktop\Nox2\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_a25db7df1f8592b510ff0c082ac0c10b804a7dab\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Kunpark_PC\.android\build-cache\81a7ecf03d3a948d8e1d187fb3482639831a9ec2\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="288913b440a3c61c30aa171095453a605432277a">
+        <dex dex="C:\Users\Kunpark_PC\Desktop\Nox2\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_ec6ec4b468fe5addf84809b2bbfafaa1530b7d42\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Kunpark_PC\.android\build-cache\7cb11f300900708178e7693f6f8bad50382128c0\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="6ef31f1555bb4cc513ec8d52711365a8b89f3600">
+        <dex dex="C:\Users\Kunpark_PC\Desktop\Nox2\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_cb9e4b2b5b423da412f9687f4039e1958ea53918\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Kunpark_PC\.android\build-cache\eb23e691223f7be02be03ea4e3bddd16dff101d9\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="d4cf6227dd6a2ceff0f7dcf0c324380b7abf2c28">
+        <dex dex="C:\Users\Kunpark_PC\Desktop\Nox2\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_2fb09247ca67e1a46c189efa3b76dc6fc81e8b2e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Kunpark_PC\Desktop\Nox2\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="58ae7b71ff6b70797df7f326bb4a1e7db60ae501">
+        <dex dex="C:\Users\Kunpark_PC\Desktop\Nox2\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_07daf261579edef9f0466e4c4755d6d2f3728890\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Kunpark_PC\.android\build-cache\d551007598db616401c9925cbae05fb62f938f08\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
+        <dex dex="C:\Users\Kunpark_PC\Desktop\Nox2\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_fbb8f4153e8a677d7a525245625203c385970f1b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Kunpark_PC\.gradle\caches\modules-2\files-2.1\com.nineoldandroids\library\2.4.0\e9b63380f3a242dbdbf103a2355ad7e43bad17cb\library-2.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="e9b63380f3a242dbdbf103a2355ad7e43bad17cb">
+        <dex dex="C:\Users\Kunpark_PC\Desktop\Nox2\app\build\intermediates\transforms\dex\debug\folders\1000\10\library-2.4.0_6ad3c65cfac052819d2c42f1aedcd8e23205b793\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Kunpark_PC\.android\build-cache\6890a81cc8c08709b495364515f2f810723ecf08\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="44903f5da5ffb1d584175d03dbab7e0ddfbf29f7">
+        <dex dex="C:\Users\Kunpark_PC\Desktop\Nox2\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_31544da0d7fdcbcdc78b5b6b720aee2341ccd368\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Kunpark_PC\AppData\Local\Android\Sdk\extras\android\m2repository\com\android\support\support-annotations\25.3.1\support-annotations-25.3.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="bf8841d29fa39e077730e7a91222c2ce269fa7c9">
+        <dex dex="C:\Users\Kunpark_PC\Desktop\Nox2\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-25.3.1_17ca90105e0f7041417282c63eadd32c9d96fcad\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Kunpark_PC\.android\build-cache\4daef8ff07b4af2977867047637ec9f5991cb3ef\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="ee17feb34ce104bc17d1a1e64346d7f779ebb066">
+        <dex dex="C:\Users\Kunpark_PC\Desktop\Nox2\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_fbf49b823b9fc4311281912af31ab3c062a1962e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Kunpark_PC\.android\build-cache\656b5e37b95c007e005ea08cc0e5958154565a8e\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="38789e20ace9ab7dbd00554bd2673ab424478d3b">
+        <dex dex="C:\Users\Kunpark_PC\Desktop\Nox2\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_0d9b5504dc9bbff58faf14edfc1873e9fbfc1e3e\classes.dex" />
+    </item>
+
+</items>

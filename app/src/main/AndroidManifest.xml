@@ -23,6 +23,8 @@
 
         </activity>
         <activity
+            android:theme="@style/AppThemeSignIn"
+            android:windowSoftInputMode="adjustPan"
             android:name=".account.SignInActivity"
             android:label="@string/title_activity_sign_in" >
 

@@ -1,28 +1,168 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context="zenlife.nox.nox.account.SignUpFragment"
-    android:background="@android:color/transparent">
-
-    <com.rengwuxian.materialedittext.MaterialEditText
+    tools:context="zenlife.nox.nox.account.SignInFragment"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#eeeeee">
+    <FrameLayout
+        android:layout_marginTop="100dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Email / phone"/>
+        android:orientation="vertical">
 
-    <com.rengwuxian.materialedittext.MaterialEditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Password"/>
 
-    <com.rengwuxian.materialedittext.MaterialEditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Confirm password"/>
+        <!-- Login progress -->
+        <ProgressBar
+            android:id="@+id/login_progress"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:visibility="gone" />
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="SIGN UP"/>
-</LinearLayout>
+        <ScrollView
+            android:id="@+id/login_form"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/email_login_form"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <FrameLayout
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+                    <ImageView
+                        android:paddingBottom="5dp"
+                        android:paddingTop="10dp"
+                        android:paddingRight="14dp"
+                        android:layout_marginBottom="10dp"
+                        android:src="@drawable/ic_email_black"
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent" />
+                    <EditText
+                        android:id="@+id/email"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:textSize="16sp"
+                        android:hint="Email"
+                        android:paddingLeft="60dp"
+                        android:textColor="@android:color/black"
+                        android:textColorHint="@android:color/black"
+                        android:backgroundTint="@android:color/black"
+                        android:maxLines="1"
+                        android:singleLine="true" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+                    <ImageView
+                        android:paddingBottom="10dp"
+                        android:paddingTop="4dp"
+                        android:paddingRight="14dp"
+                        android:layout_marginBottom="10dp"
+                        android:src="@drawable/ic_phone_black"
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent" />
+                    <EditText
+                        android:id="@+id/password"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:hint="+84"
+                        android:textSize="16sp"
+                        android:paddingLeft="60dp"
+                        android:textColor="@android:color/black"
+                        android:textColorHint="@android:color/black"
+                        android:backgroundTint="@android:color/black"
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:singleLine="true" />
+                </FrameLayout>
+                <FrameLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+                    <ImageView
+                        android:paddingBottom="5dp"
+                        android:paddingTop="10dp"
+                        android:paddingRight="14dp"
+                        android:layout_marginBottom="10dp"
+                        android:src="@drawable/ic_password_black"
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent" />
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:textSize="16sp"
+                        android:hint="Password"
+                        android:paddingLeft="60dp"
+                        android:textColor="@android:color/black"
+                        android:textColorHint="@android:color/black"
+                        android:backgroundTint="@android:color/black"
+                        android:inputType="textPassword"
+                        android:maxLines="1"
+                        android:singleLine="true" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+                    <ImageView
+                        android:paddingBottom="10dp"
+                        android:paddingTop="4dp"
+                        android:paddingRight="14dp"
+                        android:layout_marginBottom="10dp"
+                        android:src="@drawable/ic_password_black"
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent" />
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:hint="Confirm Password"
+                        android:textSize="16sp"
+                        android:paddingLeft="60dp"
+                        android:textColor="@android:color/black"
+                        android:textColorHint="@android:color/black"
+                        android:backgroundTint="@android:color/black"
+                        android:inputType="textPassword"
+                        android:maxLines="1"
+                        android:singleLine="true" />
+                </FrameLayout>
+
+
+                <com.andexert.library.RippleView
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp">
+                    <TextView
+                        android:textColor="@android:color/white"
+                        android:textSize="18sp"
+                        android:gravity="center"
+                        android:text="Sign Up"
+                        android:background="@drawable/btb_signin"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </com.andexert.library.RippleView>
+
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+</FrameLayout>
