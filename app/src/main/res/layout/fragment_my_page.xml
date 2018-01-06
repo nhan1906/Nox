@@ -80,16 +80,15 @@
                         android:text="My Page"
                         android:textColor="@android:color/black"/>
 
-                    <Button
-                        android:id="@+id/exit_btn"
-                        android:layout_width="80dp"
-                        android:layout_height="30dp"
-                        android:textColor="@color/colorAccent"
-                        android:background="@color/bubble_actions_background_transparent"
-                        android:text="@string/sign_out"
-                        android:textSize="12sp"
+                    <ImageView
+                        android:id="@+id/imgSignOut"
                         android:visibility="invisible"
-                        android:layout_gravity="center|right"/>
+                        android:layout_marginRight="10dp"
+                        android:layout_gravity="right"
+                        android:padding="15dp"
+                        android:src="@drawable/ic_sign_out"
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent" />
                 </FrameLayout>
             </android.support.v7.widget.Toolbar>
 

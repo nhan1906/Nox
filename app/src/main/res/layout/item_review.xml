@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#eeeeee"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!-- Avatar -->
+    <LinearLayout
+        android:layout_weight="1.7"
+        android:layout_width="0dp"
+        android:layout_height="match_parent">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgAvatar"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:src="@drawable/avatar"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:civ_border_color="@android:color/white"
+            app:civ_border_width="1dp"/>
+    </LinearLayout>
+    <!-- Content -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_weight="8"
+        android:layout_width="0dp"
+        android:layout_height="match_parent">
+
+        <!-- Name and time -->
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:weightSum="10"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="23dp">
+            <TextView
+                android:id="@+id/textUserName"
+                android:maxLines="1"
+                android:gravity="center_vertical"
+                android:textColor="@color/colorAccent"
+                android:text="Anonymous"
+                android:layout_weight="6"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/textElapseTime"
+                android:maxLines="1"
+                android:paddingRight="10dp"
+                android:gravity="center_vertical|right"
+                android:textColor="#34495e"
+                android:text="1 minute ago"
+                android:layout_weight="4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <!-- Rating bar -->
+        <LinearLayout
+            android:orientation="horizontal"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            >
+            <ImageView
+                android:padding="2dp"
+                android:src="@drawable/ic_star"
+                android:layout_width="15dp"
+                android:layout_height="match_parent" />
+            <ImageView
+                android:padding="2dp"
+                android:src="@drawable/ic_star"
+                android:layout_width="15dp"
+                android:layout_height="match_parent" />
+            <ImageView
+                android:padding="2dp"
+                android:src="@drawable/ic_star"
+                android:layout_width="15dp"
+                android:layout_height="match_parent" />
+            <ImageView
+                android:padding="2dp"
+                android:src="@drawable/ic_non_star"
+                android:layout_width="15dp"
+                android:layout_height="match_parent" />
+            <ImageView
+                android:padding="2dp"
+                android:src="@drawable/ic_non_star"
+                android:layout_width="15dp"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <!-- Content Discussion -->
+        <LinearLayout
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/textReview"
+                android:textColor="@android:color/black"
+                android:text="Phim này hay lắm mọi người ơi"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <!-- Action : Like, txtDislike, comment, txtReport or delete -->
+        <LinearLayout
+            android:weightSum="10"
+            android:orientation="horizontal"
+            android:layout_marginBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="23dp">
+            <!-- Like -->
+            <LinearLayout
+                android:weightSum="10"
+                android:orientation="horizontal"
+                android:layout_weight="2.3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/btnLike"
+                    android:src="@drawable/ic_like"
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:clickable="true"/>
+                <TextView
+                    android:id="@+id/txtLike"
+                    android:textColor="@color/colorBottomNavDefault"
+                    android:text="22"
+                    android:paddingLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:maxLines="1"
+                    android:layout_weight="8"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+            <!-- Dislike -->
+            <LinearLayout
+                android:weightSum="10"
+                android:orientation="horizontal"
+                android:layout_weight="2.3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/btnDislike"
+                    android:src="@drawable/ic_dislike"
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:clickable="true"/>
+                <TextView
+                    android:id="@+id/txtDislike"
+                    android:textColor="@color/colorBottomNavDefault"
+                    android:text="5"
+                    android:paddingLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:maxLines="1"
+                    android:layout_weight="8"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+            <!-- Report -->
+            <LinearLayout
+                android:weightSum="10"
+                android:orientation="horizontal"
+                android:layout_weight="2.3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/btnReport"
+                    android:src="@drawable/ic_flag"
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:clickable="true"/>
+                <TextView
+                    android:id="@+id/txtReport"
+                    android:textColor="@color/colorBottomNavDefault"
+                    android:text="0"
+                    android:paddingLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:maxLines="1"
+                    android:layout_weight="8"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+            <!-- Delete -->
+            <LinearLayout
+                android:id="@+id/layoutDelete"
+                android:weightSum="10"
+                android:orientation="horizontal"
+                android:layout_weight="2.3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <android.support.v4.widget.Space
+                    android:layout_weight="8"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+                <ImageView
+                    android:id="@+id/btnDelete"
+                    android:src="@drawable/ic_delete_black"
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+        </LinearLayout>
+        <!-- Divider -->
+        <TextView
+            android:background="@color/colorBottomNavDefault"
+            android:layout_width="match_parent"
+            android:layout_height="0.01dp" />
+    </LinearLayout>
+</LinearLayout>

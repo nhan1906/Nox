@@ -35,6 +35,7 @@ import zenlife.nox.nox.util.ItemPopularComicRVAdapter;
 
 public class MyPageFragment extends Fragment {
 
+    private ImageView imgSignOut;
     public MyPageFragment() {
     }
 
@@ -66,8 +67,8 @@ public class MyPageFragment extends Fragment {
         Bitmap blurredBitmap = BlurBuilder.blur(getContext(), originalBitmap );
         imgBackgroundProfile.setImageDrawable(new BitmapDrawable(getResources(), blurredBitmap));
 
-        final Button exit_img = (Button) view.findViewById(R.id.exit_btn);
-        exit_img.setOnClickListener(new View.OnClickListener() {
+        final ImageView imgSignOutImageView= (ImageView) view.findViewById(R.id.imgSignOut);
+        imgBackgroundProfile.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(getActivity(), SignInActivity.class));
@@ -90,7 +91,7 @@ public class MyPageFragment extends Fragment {
                 days_list_5.setVisibility(View.VISIBLE);
                 frameSignIn.setVisibility(View.GONE);
                 linearProfile.setVisibility(View.VISIBLE);
-                exit_img.setVisibility(View.VISIBLE);
+                imgSignOutImageView.setVisibility(View.VISIBLE);
             }
         });
         return view;
